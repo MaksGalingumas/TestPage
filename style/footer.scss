@@ -1,0 +1,33 @@
+.bull {
+  color: $white;
+
+  }
+
+.footer {
+  height: 140px;
+  background-color: $footer;
+  p {
+    float: left;
+    font-family: regular;
+    margin-left: 50px;
+    margin-top: 0;
+  }
+}
+.footerlist {
+
+  > ul {
+    float: left;
+  > li {
+    float: left;
+    display: inline;
+    > a{
+      font-size: 18px;
+      font-family: regular;
+      margin-left: 5px;
+      padding-left: 5px;
+      text-decoration: none;
+      color: $white
+    }
+  }
+}
+}

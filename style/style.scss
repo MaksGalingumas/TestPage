@@ -1,0 +1,12 @@
+@import 'variables.scss';
+@import 'all.scss';
+@import 'placeholders.scss';
+@import 'mixins.scss';
+@font-face {
+    font-family: bold;
+    src: url(../fonts/Quantico-Bold.ttf) format("truetype"); 
+}
+@font-face {
+    font-family:regular;
+    src: url(../fonts/Quantico-Regular.ttf) format("truetype");
+}
