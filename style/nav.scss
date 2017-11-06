@@ -2,15 +2,15 @@
   background-image: url("../img/graphic.png");
   background-size: 100%;
   display: flex;
-  height: 120px;
+  min-height: 120px;
   align-items: flex-end;
   justify-content: flex-end;
   text-decoration: none;
-  margin-bottom: 25px;
+  margin-bottom: 3%;
     img {
     position: relative;
-    right: 27%;
-    margin-bottom: 10px;
+    right: 24%;
+    margin-bottom: 1%;
   }
 
   > ul {
@@ -53,7 +53,7 @@
 }
  .nav-content {
      margin-left: -14px;
-     width: 13%;
+     width: 11%;
      font-family: regular;
      border-radius: 6px;
      position: absolute;
@@ -81,9 +81,50 @@
  .nav-sub {
      ul {
          @extend %plainlist;
-
      }
-     a {
+ }
+ .arrow-up {
+  width: 0;
+  height: 0;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
 
-     }
+  border-bottom: 5px solid black;
+}
+div.error-label-arrow{
+width: 0;
+height: 0;
+border-style: solid;
+border-width: 0 10px 10px 10px;
+border-color: transparent transparent $pink transparent;
+line-height: 0px;
+_border-color: $pink;
+_filter: progid:DXImageTransform.Microsoft.Chroma(color='#000000');
+position: absolute;
+margin-top: -10px;
+}
+ @media only screen and (max-width:1000px) {
+   .nav-main {
+     background-image: url("../img/backgorund.png");
+     width: 119%;
+     justify-content: center;
+     min-height: 226px;
+   img {
+     display: none;
+   }
+   > ul {
+     font-size: 71px;
+   }
+ }
+ .nav-item {
+   font-size: 48px;
+ }
+ .nav-content {
+   top: 225px;
+   width: 25%;
+   a {
+     font-size: 45px;
+     text-align: center;
+   }
+ }
  }

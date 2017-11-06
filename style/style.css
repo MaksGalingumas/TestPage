@@ -5,7 +5,7 @@ body {
 
 section {
   border: 2px solid #d2ccda;
-  width: 80%;
+  width: 65%;
   background-color: #fff;
   padding: 0px 30px 36px; }
 
@@ -86,14 +86,7 @@ label {
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
-    display: flex;
-    /*
-      align-items:flex-start;
-      align-items:flex-end;
-      align-items:center;
-
-      flex-direction:column;
-      */ } }
+    display: flex; } }
 
 .container-1 div {
   text-align: left;
@@ -138,6 +131,32 @@ label {
   background: linear-gradient(to right, rgba(215, 212, 217, 0) 0%, rgba(215, 212, 217, 0.06) 5%, rgba(215, 212, 217, 0.17) 10%, rgba(215, 212, 217, 0.35) 17%, rgba(215, 212, 217, 0.7) 30%, rgba(215, 212, 217, 0.86) 37%, rgba(215, 212, 217, 0.94) 42%, #d7d4d9 48%, rgba(215, 212, 217, 0.98) 55%, rgba(215, 212, 217, 0.87) 62%, rgba(215, 212, 217, 0.7) 70%, rgba(215, 212, 217, 0.35) 83%, rgba(215, 212, 217, 0.17) 90%, rgba(215, 212, 217, 0.06) 95%, rgba(215, 212, 217, 0) 100%);
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00d7d4d9', endColorstr='#00d7d4d9',GradientType=1 ); }
 
+@media screen and (max-width: 1000px) {
+  section {
+    width: 100%;
+    text-align: center; }
+    section p {
+      font-size: 10px; }
+  .wrapper {
+    display: inline-block; }
+    .wrapper aside {
+      width: 100%; }
+    .wrapper p {
+      font-size: 30px; }
+    .wrapper label {
+      font-size: 50px; }
+    .wrapper input[type=submit] {
+      font-size: 60px; }
+    .wrapper input[type=text], .wrapper textarea {
+      font-size: 40px; }
+    .wrapper .form {
+      border: none; }
+  .gradient {
+    text-align: center;
+    padding-left: 30px; }
+    .gradient p {
+      font-size: 30px; } }
+
 .nav-main {
   background-image: url("../img/graphic.png");
   background-size: 100%;
@@ -145,7 +164,7 @@ label {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  height: 120px;
+  min-height: 120px;
   -webkit-box-align: end;
   -webkit-align-items: flex-end;
   -ms-flex-align: end;
@@ -155,11 +174,11 @@ label {
   -ms-flex-pack: end;
   justify-content: flex-end;
   text-decoration: none;
-  margin-bottom: 25px; }
+  margin-bottom: 3%; }
   .nav-main img {
     position: relative;
-    right: 27%;
-    margin-bottom: 10px; }
+    right: 24%;
+    margin-bottom: 1%; }
   .nav-main > ul {
     float: left; }
     .nav-main > ul > li {
@@ -189,7 +208,7 @@ label {
 
 .nav-content {
   margin-left: -14px;
-  width: 13%;
+  width: 11%;
   font-family: regular;
   border-radius: 6px;
   position: absolute;
@@ -208,11 +227,52 @@ label {
       color: white;
       background-color: #ff6f93; }
 
+.arrow-up {
+  width: 0;
+  height: 0;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-bottom: 5px solid black; }
+
+div.error-label-arrow {
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 0 10px 10px 10px;
+  border-color: transparent transparent #F14974 transparent;
+  line-height: 0px;
+  _border-color: #F14974;
+  _filter: progid:DXImageTransform.Microsoft.Chroma(color='#000000');
+  position: absolute;
+  margin-top: -10px; }
+
+@media only screen and (max-width: 1000px) {
+  .nav-main {
+    background-image: url("../img/backgorund.png");
+    width: 119%;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    min-height: 226px; }
+    .nav-main img {
+      display: none; }
+    .nav-main > ul {
+      font-size: 71px; }
+  .nav-item {
+    font-size: 48px; }
+  .nav-content {
+    top: 225px;
+    width: 25%; }
+    .nav-content a {
+      font-size: 45px;
+      text-align: center; } }
+
 .bull {
   color: white; }
 
 .footer {
-  height: 140px;
+  height: 150px;
   background-color: #a4a2a6; }
   .footer p {
     float: left;
@@ -232,6 +292,19 @@ label {
       padding-left: 5px;
       text-decoration: none;
       color: white; }
+
+@media screen and (max-width: 1000px) {
+  .footer {
+    width: 119%;
+    height: 730px; }
+    .footer p {
+      font-size: 30px;
+      margin-left: 10px;
+      text-align: center; }
+  .footerlist > ul {
+    padding-left: 10px; }
+    .footerlist > ul > li > a {
+      font-size: 42px; } }
 
 .nav-main > ul, .nav-sub ul {
   marign: 0;
