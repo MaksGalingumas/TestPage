@@ -139,8 +139,13 @@ label {
       font-size: 10px; }
   .wrapper {
     display: inline-block; }
+    .wrapper h1 {
+      font-size: 55px; }
     .wrapper aside {
       width: 100%; }
+      .wrapper aside h2 {
+        margin-top: 9px;
+        font-size: 45px; }
     .wrapper p {
       font-size: 30px; }
     .wrapper label {
@@ -177,12 +182,15 @@ label {
   margin-bottom: 3%; }
   .nav-main img {
     position: relative;
-    right: 24%;
+    right: 27%;
     margin-bottom: 1%; }
   .nav-main > ul {
     float: left; }
     .nav-main > ul > li {
       float: left; }
+
+.nav-item:focus + .nav-content {
+  display: block; }
 
 .nav-item {
   display: inline-block;
@@ -191,20 +199,10 @@ label {
   font-size: 20px;
   text-decoration: none;
   color: white; }
-  .nav-item:hover {
+  .nav-item:focus {
     color: #F14974; }
-  .nav-item:focus ~ .nav-content {
-    max-height: 800px; }
-
-.arrow {
-  width: 10px;
-  height: 10px;
-  background-color: red;
-  margin-left: 10px;
-  z-index: 10;
-  position: absolute;
-  overflow: hidden;
-  margin-top: -10px; }
+    .nav-item:focus ~ .nav-content {
+      max-height: 800px; }
 
 .nav-content {
   margin-left: -14px;
@@ -213,16 +211,17 @@ label {
   border-radius: 6px;
   position: absolute;
   top: 120px;
-  overflow: hidden;
   background-color: #F14974;
-  max-height: 0; }
+  max-height: 0;
+  display: block;
+  display: none; }
   .nav-content a {
     border-bottom: 1px solid #bf3b5c;
     display: block;
     color: black;
     text-decoration: none;
     padding-left: 12px;
-    font-size: 17px; }
+    font-size: 15px; }
     .nav-content a:hover {
       color: white;
       background-color: #ff6f93; }
@@ -243,8 +242,9 @@ div.error-label-arrow {
   line-height: 0px;
   _border-color: #F14974;
   _filter: progid:DXImageTransform.Microsoft.Chroma(color='#000000');
-  position: absolute;
-  margin-top: -10px; }
+  position: relative;
+  margin-left: 8px;
+  margin-top: -8px; }
 
 @media only screen and (max-width: 1000px) {
   .nav-main {
@@ -266,7 +266,11 @@ div.error-label-arrow {
     width: 25%; }
     .nav-content a {
       font-size: 45px;
-      text-align: center; } }
+      text-align: center; }
+  div.error-label-arrow {
+    border-width: 0 40px 40px 40px;
+    margin-top: -29px;
+    margin-left: 20px; } }
 
 .bull {
   color: white; }
