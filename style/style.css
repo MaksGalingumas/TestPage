@@ -203,6 +203,8 @@ label {
     color: #F14974; }
     .nav-item:focus ~ .nav-content {
       max-height: 800px; }
+  .nav-item:hover {
+    color: #F14974; }
 
 .nav-content {
   margin-left: -14px;
